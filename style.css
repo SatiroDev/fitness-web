@@ -5,6 +5,7 @@
 
 body {
     display: flex;
+    flex-wrap: wrap;
     background-color: #f2f2ee;
 }
 
@@ -18,6 +19,7 @@ header {
     height: auto;
     background-color: #f6f7f3;
     border-bottom: 1px solid #dfe8d9;
+    z-index: 1;
 }
 
 .headerInterno {
@@ -92,19 +94,22 @@ nav {
 
 main {
     width: 100%;
-
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .inicio {
     display: flex;
     width: auto;
     height: auto;
-    min-height: 50vh;
+    min-height: 70vh;
     justify-content: center;
-    align-items: center;
     padding: 15px;
     background-color: #f2f2ee;
     margin-top: 200px;
+    border-bottom: 1px solid #b0f3b0;
 }
 
 .inicioInterno {
@@ -123,6 +128,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 200px;
     height: 30px;
     background-color: #ddead4;
@@ -150,6 +156,7 @@ main {
 
 .botoesInicio {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -226,4 +233,239 @@ main {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.planos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    gap: 20px;
+    background-color: #eff4ec;
+    padding: 50px;
+}
+
+
+.descricaoGeral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: auto;
+}
+
+.nossosPlanos {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #318171;
+}
+
+.escolhaPlano {
+    color: #423024;
+    font-size: 45px;
+}
+
+.descricaoPlano {
+    text-align: center;
+    max-width: 680px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #917a68;
+}
+
+.cardsPlanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.peso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #d7e6cb;
+    border-radius: 10px;
+}
+
+.iconPeso {
+    width: 30px;
+}
+
+.cardBasico {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-height: 420px;
+    height: 530px;
+    padding: 30px;
+    background-color: #fafbf9;
+    border-radius: 20px;
+    gap: 25px;
+    box-shadow: 0px 10px 10px 5px #e7f0e7;
+    transition: 0.5s ease;
+}
+
+.cardBasico:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 10px 0.5px #b0f3b0;
+    transition: 0.5s ease;
+}
+
+.headerCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tituloCard {
+    font-size: 24px;
+    color: #423024;
+}
+
+.descricaoCard {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #917a68;
+}
+
+.precoPlano {
+    display: flex;
+    align-items: center;
+}
+
+.rs {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #917a68;
+}
+
+.preco {
+    font-size: 50px;
+    color: #423024;
+    font-weight: 700;
+}
+
+.mes {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #917a68;
+}
+
+.pontosCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #423024;
+}
+
+.ponto {
+    display: flex;
+    gap: 10px;
+}
+
+.iconCheck {
+    padding: 3px;
+    width: 18px;
+    background-color: #e6eeeb;
+    border-radius: 20px;
+}
+
+.botaoCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #318171;
+    color: #318171;
+    border-radius: 10px;
+    width: 100%;
+    height: 45px;
+}
+
+.botaoCard:hover {
+    background-color: #318171;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.cardPremium {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    min-height: 450px;
+    height: 570px;
+    padding: 30px;
+    background-color: #fafbf9;
+    border-radius: 20px;
+    gap: 25px;
+    border: solid #f2cc5a;
+    box-shadow: 0px 10px 10px 5px #e7f0e7;
+    transition: 0.5s ease;
+}
+
+.cardPremium:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 10px 0.5px rgb(228, 255, 129);
+    transition: 0.5s ease;
+}
+
+.estrela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #f8f2d9;
+    border-radius: 10px;
+}
+
+.iconEstrela {
+    width: 30px;
+}
+
+.botaoCardPremium {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2cc5a;
+    color: #3e291b;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+
+.botaoCardPremium:hover {
+    scale: 1.05;
+}
+
+
+.cardGold {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-height: 420px;
+    height: 530px;
+    padding: 30px;
+    background-color: #fafbf9;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px 5px #e7f0e7;
+    gap: 25px;
+    transition: 0.5s ease;
+}
+
+.cardGold:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 10px 0.5px #b0f3b0;
+    transition: 0.5s ease;
+}
+
+.iconCoroa {
+    width: 30px;
 }
