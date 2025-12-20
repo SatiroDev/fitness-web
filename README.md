@@ -56,8 +56,6 @@ Essas cores foram escolhidas para transmitir **energia, equilíbrio e bem-estar*
 📁 fitness-web
 ├── index.html
 ├── style.css
-├── script.js
-└── assets/
-    ├── images/
-    └── icons/
+├── img/
+└── README.md
 ```
