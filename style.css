@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    background-color: #f2f2ee;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: #f6f7f3;
+    border-bottom: 1px solid #dfe8d9;
+}
+
+.headerInterno {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.nomeLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.lima, .studio {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.lima {
+    color: #318171;
+}
+
+.studio {
+    color: #f2cc5a;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #917a68;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.inicioNav:hover, .planosNav:hover, .horariosNav:hover, .contatoNav:hover {
+    color: #318171;
+    transition: 0.5s ease;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+.iconLua {
+    width: 20px;
+}
+
+.matriculaLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2cc5a;
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    color: #3e291b;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.matriculaLink:hover {
+    scale: 1.05;
+    transition: 0.5s ease;
+
+}
+
+main {
+    width: 100%;
+
+}
+
+.inicio {
+    display: flex;
+    width: auto;
+    height: auto;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #f2f2ee;
+    margin-top: 200px;
+}
+
+.inicioInterno {
+    display: flex;
+    width: 90%;
+}
+
+.inicioLeft {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+}
+
+.fraseChamativa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    background-color: #ddead4;
+    color: #318171;
+    border-radius: 15px;
+}
+
+.titulo {
+    font-size: 25px;
+}
+
+.tituloP1 {
+    color: #423024;
+}
+
+.tituloP2 {
+    color: #318171;
+}
+
+.descricao {
+    color: #917a68;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.botoesInicio {
+    display: flex;
+    gap: 15px;
+}
+
+.conhecerPlanos {
+    background-color: #f2cc5a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    gap: 10px;
+    color: #3e291b;
+    font-weight: bold;
+}
+
+.conhecerPlanos:hover {
+    scale: 1.05;
+}
+
+.iconSeta {
+    width: 20px;
+}
+
+.faleConosco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    border: 2px solid #318171;
+    border-radius: 10px;
+    color: #318171;
+    transition: 0.5s ease;
+}
+
+.faleConosco:hover {
+    background-color: #318171;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.iconCoracao {
+    width: 20px;
+}
+
+.iconUsuarios {
+    width: 20px;
+}
+
+.iconTrofeu {
+    width: 20px;
+}
+
+.palavrasChaves {
+    display: flex;
+    color: #917a68;
+    gap: 10px;
+}
+
+.bemEstar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comunidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.resultados {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
